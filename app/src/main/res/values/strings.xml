@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">电影Demo</string>
+    <string name="movie_face">电影封面</string>
+    <string name="director">导演：</string>
+    <string name="actor">主演：</string>
+    <string name="type">类型：</string>
+    <string name="year">年份：</string>
+</resources>

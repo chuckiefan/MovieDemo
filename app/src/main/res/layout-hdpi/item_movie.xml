@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="16dp"
+              android:layout_marginRight="16dp"
+              android:orientation="horizontal"
+>
+
+
+    <ImageView android:id="@+id/picture" android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_gravity="center_vertical"
+
+               android:layout_marginLeft="16dp"
+
+               android:layout_marginRight="16dp"
+               android:contentDescription="@string/movie_face"
+               android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:orientation="vertical"
+    >
+        <TextView android:id="@+id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/title_text_size"
+                  tools:text="肖申克的救赎 The Shawshank Redemption"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        >
+            <RatingBar android:id="@+id/rating_bar"
+                       style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical"
+                       android:numStars="5"
+
+            />
+            <TextView android:id="@+id/rating_des" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      tools:text=" (831248人评价)"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        >
+            <TextView android:id="@+id/textView" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/director"/>
+
+            <TextView android:id="@+id/director" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      tools:text="弗兰克·德拉邦特"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/actor"
+            />
+
+            <TextView android:id="@+id/actors" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      tools:text="蒂姆·罗宾斯 / 摩根·弗里曼 / 鲍勃·冈顿 "/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/type"
+            />
+
+            <TextView android:id="@+id/type" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      tools:text="犯罪/剧情 "/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/year"
+            />
+
+            <TextView android:id="@+id/year" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      tools:text="1994"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
